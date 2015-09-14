@@ -25,4 +25,6 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "learn rails"
   end
 
+
+
 end

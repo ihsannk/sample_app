@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)
   	# @user.email = @user.email.downcase
   	if @user.save
+      log_in @user
   		flash[:success] = "welcome #{@user.name}!"
   		redirect_to @user
   	else
